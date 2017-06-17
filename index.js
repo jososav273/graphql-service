@@ -1,6 +1,8 @@
 import express from 'express'
-import mongoose from 'mongoose'
 import graphqlHTTP from 'express-graphql'
+import database from './config/database'
+
+database()
 
 const app = express()
 
